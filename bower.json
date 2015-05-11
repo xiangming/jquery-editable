@@ -1,0 +1,17 @@
+{
+  "name": "jquery-editable",
+  "version": "1.0.0",
+  "homepage": "https://github.com/xiangming/jquery-editable",
+  "authors": [
+    "arvin <webappsniper@gmail.com>"
+  ],
+  "description": "a jquery plugin to make text editable",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

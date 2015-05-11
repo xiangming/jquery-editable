@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jquery-editable demo</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/jquery.editable.js"></script>
+
+    <!-- just for demo, not necessary -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style type="text/css">
+        textarea.form-control{
+            min-height: 100px;
+        }
+        .editable{
+            min-height: 34px;
+        }
+        td.editable{
+            height: 34px;
+        }
+        td.editable.item{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-horizontal quote-form">
+            <div class="form-group">
+                <div class="">
+                    <label for="" class="control-label col-sm-2">Customer Address</label>
+                    <div class="col-sm-4">
+                        <p class="form-control-static editable" data-type="textarea">
+                            Apple Ltd<br>6 The Fountain Centre<br>Imperial Wharf,<br>London SW6 2TW<br>United Kingdom<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="">
+                    <label for="" class="control-label col-sm-2">Contact Name</label>
+                    <div class="col-sm-4">
+                        <p class="form-control-static editable">Jobs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="">
+                    <label for="" class="control-label col-sm-2">Phone</label>
+                    <div class="col-sm-4">
+                        <p class="form-control-static editable">0755 2977 3450</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="">
+                    <label for="" class="control-label col-sm-2">Email</label>
+                    <div class="col-sm-4">
+                        <p class="form-control-static editable">jobs@apple.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="">
+                    <label for="" class="control-label col-sm-2">Price Level</label>
+                    <div class="col-sm-4">
+                        <p class="form-control-static editable" data-type="select" data-choice='{"level10":"10","level9":"9"}'>Level10</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $('.editable').editable({
+            className: 'form-control'
+        });
+    </script>
+</body>
+</html>
