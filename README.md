@@ -28,7 +28,3 @@ $('.editable').editable({
     console.log(e.value);
 });
 ```
-
-## examples
-
-validation
